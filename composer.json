@@ -1,0 +1,13 @@
+{
+    "name": "platz1de/easyedit",
+    "description": "EasyEdit plugin for PocketMine-MP 5",
+    "type": "project",
+    "require": {
+        "pocketmine/pocketmine-mp": "^5.12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "platz1de\\EasyEdit\\": "src/platz1de/EasyEdit/"
+        }
+    }
+}
