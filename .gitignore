@@ -1,1 +1,32 @@
-Nothing should be ignored based on the provided file changes, as only a PHP source file was modified and no build artifacts, dependencies, or temporary files were included in the changes.
+```
+# Dependencies
+vendor/
+
+# Build artifacts
+EasyEdit.phar
+build-phar.php
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# PHP specific
+*.php~
+**/vendor/**/.gitignore
+
+```
