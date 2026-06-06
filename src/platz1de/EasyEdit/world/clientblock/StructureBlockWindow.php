@@ -42,7 +42,7 @@ class StructureBlockWindow extends ClientSideBlock
 	{
 		PacketUtils::sendFakeBlock($player, $this->block);
 		if (($inv = $player->getNetworkSession()->getInvManager()) instanceof InventoryManager) {
-			$player->getNetworkSession()->sendDataPacket(ContainerOpenPacket::blockInv($inv->getCurrentWindowId(), WindowTypes::STRUCTURE_EDITOR, BlockPosition::fromVector3($this->block->getPosition())));
+			$player->getNetworkSession()->sendDataPacket(ContainerOpenPacket::create($inv->getCurrentWindowId(), WindowTypes::STRUCTURE_EDITOR, BlockPosition::fromVector3($this->block->getPosition())));
 		}
 	}
 
