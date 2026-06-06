@@ -35,7 +35,7 @@ class PacketUtils
 		$player->getNetworkSession()->sendDataPacket(UpdateBlockPacket::create(
 			BlockPosition::fromVector3($pos),
 			TypeConverter::getInstance()->getBlockTranslator()->internalIdToNetworkId($block->getStateId()),
-			UpdateBlockPacket::FLAG_NETWORK,
+			UpdateBlockPacket::FLAG_PRIORITY,
 			UpdateBlockPacket::DATA_LAYER_NORMAL
 		));
 
